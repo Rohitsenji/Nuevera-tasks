@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .navbar a {
+            margin-top: 10vh ;  
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+            font-size: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="../logo.png" alt="Nuevera" style="width: 100px; mix-blend-mode: multiply;
+            filter: contrast(1);"></div>
+        <a href="#profile">Profile</a>
+        <a href="#loginJobSeekers">Login/Signup for Job Seekers</a>
+        <a href="#loginCompany">Login/Signup for Company</a>
+        <a href="#postJob">Post Job Requirements</a>
+        <a href="#about">About</a>
+        <a href="#companyList">Companies on our Website</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to Job Portal</h1>
+        <p>
+            This is a job portal website where you can find the perfect job or post your job requirements as a company.
+        </p>
+        <button class="button" id="hireButton" onclick="handleHire()">Click Here to Hire</button>
+    </div>
+
+    <div class="footer">
+        <a href="#profile">Profile</a>
+        <a href="#loginJobSeekers">Login/Signup for Job Seekers</a>
+        <a href="#loginCompany">Login/Signup for Company</a>
+        <a href="#postJob">Post Job Requirements</a>
+        <a href="#about">About</a>
+        <a href="#companyList">Companies on our Website</a>
+    </div>
+
+    <script>
+        // Function to handle hire button click and display the hire form
+        function handleHire() {
+            const hireForm = document.getElementById("hireForm");
+            hireForm.style.display = "block";
+        }
+
+        // Function to close the hire form
+        function closeHireForm() {
+            const hireForm = document.getElementById("hireForm");
+            hireForm.style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Nuevera</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="blur">
+    <div class="navbar">
+        <div class="left">
+            <img src="./logo.png" class="hide-bg" alt="loading....">
+        
+        </div>
+        <a href="./home page/homepage.html">Home</a>
+        <div class="buttons">
+            <button class="button" id="loginButton">Login</button>
+            <button class="button" id="signupButton">Apply for job</button>
+            <button class="button" id="hireButton" onclick="submitHire()">Click Here to Hire</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1 >Welcome to Nuevera Jobs</h1>
+    </div>
+</div>
+    <div class="container">
+        <div class="login-form" id="loginForm">
+            <div class="formtop">
+            <h2>Login</h2>
+            <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <br>
+            <button class="button" onclick="submitLogin()">Login</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="signup" id="signupForm">
+            <div class="cross2">
+            <h2>Employee details</h2>
+            <span class="cross" id="cross3"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter your full name">
+            <br>
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" placeholder="Enter your contact number">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+            <br>
+            <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth">
+            <br>
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume">
+            <br>
+            <label for="username">Username:</label>
+            <input type="text" id="username2" placeholder="Choose a username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password2" placeholder="Choose a password">
+            <br>
+            <button class="button" onclick="submitSignup()">Create Account</button>
+        </div>
+    </div>
+    <div class="container3">
+        <div class="hire-form hireformremove hireformadd" id="hireForm">
+            <div class="cross2">
+                <h2>Hire form</h2>
+                <span class="cross" id="cross4"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" placeholder="Enter your company name">
+            <label for="industrySector">Industry/Sector:</label>
+            <input type="text" id="industrySector" placeholder="Enter the industry/sector">
+            <label for="companyOverview">Company Overview:</label>
+            <textarea id="companyOverview" rows="4" placeholder="Enter a brief overview of the company"></textarea>
+            <br>
+            <button class="button" id="buttonhire" onclick="submitHire()">Submit</button>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/078812abb6.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>    
+</body>
+</html>
+
